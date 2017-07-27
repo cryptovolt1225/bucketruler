@@ -43,8 +43,8 @@ $(function() {
 			while(i<=height-(margin*2))
 			{
 				if (i!=0){
-					doc.line(ruler_width, i+margin, margin+ruler_width, i+margin);
-					doc.text(ruler_width-margin*2,i+margin,((litersPerCm*i)/100).toFixed(2).toString()+'l');
+					doc.line(ruler_width, (height-(margin*2))-i+margin, margin+ruler_width, (height-(margin*2))-i+margin);
+					doc.text(ruler_width-margin*2,(height-(margin*2))-i+margin,((litersPerCm*i)/100).toFixed(2).toString()+'l');
 				}
 				i=i+1.5;
 			}
